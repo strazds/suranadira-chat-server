@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/app/public/index.html");
 });
 
+// Handle client connection
 io.on("connection", socket => {
   // Emit on user joining the room
   socket.on("join", function(data) {
