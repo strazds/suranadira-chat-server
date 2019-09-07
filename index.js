@@ -20,11 +20,13 @@ io.on("connection", socket => {
     io.in(data.room).emit("onDataReceived", data);
     console.log("Socket joined the room", data.room);
   });
+
   socket.on("leave", function(data) {
     socket.leave(data.room);
     io.in(data.room).emit("onDataReceived", data);
     console.log("Socket left the room", data.room);
   });
+
   socket.on("onDataReceived", function(data) {
     socket.broadcast.to(data.room).emit("onDataReceived", data);
     console.log("onDataReceived:", data);
