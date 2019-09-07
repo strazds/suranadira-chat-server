@@ -1,0 +1,30 @@
+{
+  "name": "suranadira-chat-server",
+  "version": "1.0.0",
+  "description": "Node.js server for Suranadira Chat",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strazds/suranadira-chat-server.git"
+  },
+  "keywords": [
+    "suranadira"
+  ],
+  "author": "Armands Strazds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strazds/suranadira-chat-server/issues"
+  },
+  "homepage": "https://github.com/strazds/suranadira-chat-server#readme"
+}
