@@ -20,7 +20,6 @@ io.on("connection", socket => {
     io.in(data.room).emit("onDataReceived", data);
     console.log("Socket joined the room", data.room);
   });
-
   socket.on("leave", function(data) {
     socket.leave(data.room);
     io.in(data.room).emit("onDataReceived", data);
